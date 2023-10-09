@@ -1,0 +1,309 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+[class*="col-"] {
+    float: left;
+}
+.col-1 {
+   width: 8.33%;
+}
+.col-2 {
+   width: 16.66%;
+}
+.col-3 {
+   width: 25%;
+}
+.col-4 {
+   width: 33.33%;
+}
+.col-5 {
+   width: 41.66%;
+}
+.col-6 {
+   width: 50%;
+}
+.col-7 {
+   width: 58.33%;
+}
+.col-8 {
+   width: 66.66%;
+}
+.col-9 {
+   width: 75%;
+}
+.col-10 {
+   width: 83.33%;
+}
+.col-11 {
+   width: 91.66%;
+}
+.col-12 {
+   width: 100%;
+}
+@media only screen and (max-width: 768px) {
+    [class*="col-"] {
+        width: 100%;
+   }
+}
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #E9E9E9;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: orangered;
+    color: #fff;
+}
+.nav-links a {
+    color: #fff;
+}
+.logo {
+    font-size: 36px;
+    font-family: 'Brush Script MT', cursive;
+}
+.menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+}
+.menu li:hover {
+    background-color: #4c9e9e;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+.menu li {
+    padding: 5px 14px;
+}
+input[type=checkbox] {
+    display: none;
+}
+.hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+}
+@media (max-width: 768px) {
+    .menu {
+        display:none;
+        position: absolute;
+        background-color:teal;
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 16px 0;
+   }
+    .menu li:hover {
+        display: inline-block;
+        background-color:#4c9e9e;
+        transition: 0.3s ease;
+   }
+    .menu li + li {
+        margin-top: 12px;
+   }
+    input[type=checkbox]:checked ~ .menu {
+        display: block;
+   }
+    .hamburger {
+        display: block;
+   }
+}
+.service-tagline{
+    text-align: center;
+}
+.service-tagline h2{
+    margin-top: 50px;
+}
+.service-tagline p{
+    color: rgba(90, 98, 104, 0.644);
+    margin-top: 20px;
+    size: 25px;
+    font-style: italic;
+}
+.shipping{
+    padding: 50px;
+}
+.shipping-container{
+    border: 1px solid #BFBFBF;
+    background-color: white;
+    box-shadow: 10px 10px 5px #aaaaaa;
+    padding: 15px;
+}
+.shipping-container h3{
+    text-align: center;
+    margin-top: 20px;
+}
+.shipping-container p{
+    text-align: center;
+    margin-top: 15px;
+    padding: 15px;
+    color: rgba(90, 98, 104, 0.644);
+}
+.request-form h2{
+    text-align: center;
+    color: white;
+}
+.request-form p{
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+}
+.request-form form{
+    margin-top: 20px;
+}
+input[type=text], select {
+    width: 100%;
+    padding: 10px 18px;
+    margin: 8px 0;
+    display: inline-block;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+input[type=submit] {
+    width: 100%;
+    background: rgba(146, 62, 6, 0.2);
+    color: white;
+    padding: 12px 18px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    background-color: white;
+    color: orangered;
+}
+.request-form{
+    padding: 25px 100px 25px;
+    background-color: orangered;
+    height:448px;
+}
+.about-section{
+    padding: 100px ;
+    height: 449px;
+}
+.about-section p{
+    margin-top: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgba(90, 98, 104, 0.644);
+    font-size: 15px;
+    font-style: italic;
+}
+.social-links{
+    background-color: black;
+    padding: 50px;
+    height: 350px;
+}
+.social-links h2{
+    font-family: 'Brush Script MT', cursive;
+    font-size: 50px;
+    color: white;
+    text-align: initial;
+}
+.rights-section p{
+    margin-top: 25px;
+}
+.social-links p{
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 12px;
+    font-style: italic;
+}
+.social-links ul{
+    margin-top: 10px;
+}
+.social-links img{
+    height: 30px;
+    width: 30px;
+    margin-left: 5px;
+}
+.other-links{
+    background-color: rgb(34, 31, 31);
+    padding: 50px;
+    height: 350px;
+}
+.other-links h5{
+    padding: 15px 0px;
+    color: white;
+}
+.other-links ul{
+    list-style: none;
+}
+.other-links li{
+    color: rgba(90, 98, 104, 0.644);
+    line-height: 1.5;
+}
+@media (max-width: 768px) {
+    .contact-image img{
+        width: 100%;
+        height: 100%;
+   }
+    .request-form{
+        padding: 25px 50px 25px;
+        background-color: orangered;
+        height:100%;
+   }
+    input[type=text], select {
+        width: 100%;
+        padding: 5px 10px;
+        margin: 8px 0;
+        display: inline-block;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        box-sizing: border-box;
+        background: rgba(255, 255, 255, 0.2);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+   }
+    input[type=submit] {
+        width: 100%;
+        background: rgba(146, 62, 6, 0.2);
+        color: white;
+        padding: 12px 18px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+   }
+    .about-section{
+        padding: 50px ;
+        height: 100%;
+   }
+    .about-section p{
+        margin-top: 25px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: rgba(90, 98, 104, 0.644);
+        font-size: 15px;
+        font-style: italic;
+   }
+    .about-image img{
+        width: 100%;
+        height: 100%;
+   }
+    .social-links{
+        padding: 50px;
+        height: 100% 
+   }
+    .other-links{
+        background-color: rgb(34, 31, 31);
+        padding: 50px;
+        height: 100%;
+   }
+}
